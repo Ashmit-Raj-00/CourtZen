@@ -1,0 +1,18 @@
+Setup:
+C:\Users\Sunny Go\CourtZen>
+.venv\Scripts\activate
+
+
+
+
+DATASET
+python -c "import pandas as pd; df=pd.read_csv('data/raw/court_cases.csv'); print(df.head()); print(df.shape)"
+
+
+DATA QUALITY
+python src\preprocess_data.py
+
+
+
+prediction 
+python src\train_duration_model.py
